@@ -52,12 +52,10 @@ module.exports = {
     modules: [
       'node_modules',
       path.resolve(__dirname, 'src/app'),
-      path.resolve(__dirname, 'src/app/components-v2'),
-      path.resolve(__dirname, 'src/app/components-v2/Shared'),
     ]
   },
   plugins: [
-    new webpack.ProvidePlugin({
+    new webpack.ProvidePlugin({ 
       "React": "react",
     }),
   ],
